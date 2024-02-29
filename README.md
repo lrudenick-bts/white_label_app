@@ -10,11 +10,12 @@ The idea is to have a base project with the "white-label" app source code itself
 
 As its name says, it is the code-base project, containing the base "white-label" source code of the app. 
 
-It has a [config](/base_project/config) directory which may contains the configuration to customize. See example class [branding.dart](/base_project/config/lib/branding.dart)
+It has a [config](/base_project/config) directory which may contains the configurations to customize. See example class [branding.dart](/base_project/config/lib/branding.dart)
 
 ```
 class Branding {
   static String appName = 'Base project app';
+  ...
 }
 
 ```
@@ -43,6 +44,7 @@ The custom projects should have the same `config` directory mentioned in the pre
 ```
 class Branding {
   static String appName = 'Brand 1 app';
+  ...
 }
 ```
 
@@ -75,4 +77,4 @@ void main() => base_project.main();
 And that will be all. After build and run the apps, you will have three separated apps using the same base source code.
 
 
-<img src="/screenshots/home.jpg" height="300"/> |  <img src="/screenshots/base_project.jpg" height="300"/> | <img src="/screenshots/brand_1.jpg" height="300"/> | <img src="/screenshots/brand_2.jpg" height="300"/>
+<img src="/screenshots/home.png" height="400"/>&nbsp;&nbsp;&nbsp;<img src="/screenshots/base_project.png" height="400"/>&nbsp;&nbsp;&nbsp;<img src="/screenshots/brand_1.png" height="400"/>&nbsp;&nbsp;&nbsp;<img src="/screenshots/brand_2.png" height="400"/>

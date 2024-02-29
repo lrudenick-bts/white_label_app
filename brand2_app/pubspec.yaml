@@ -7,10 +7,13 @@ environment:
   sdk: '>=3.3.0 <4.0.0'
 
 dependencies:
+  animate_do: ^3.3.1
   base_project:
     path: ../base_project
   flutter:
     sdk: flutter
+  flutter_riverpod: ^2.4.9
+  go_router: ^13.1.0
 
 dependency_overrides:
   config:
@@ -23,3 +26,8 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+
+fonts:
+    - family: Anta
+      fonts:
+        - asset: fonts/Anta-Regular.ttf

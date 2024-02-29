@@ -1,0 +1,16 @@
+{
+    "project_name": "project name",
+    "project_name_abbr": "{{ cookiecutter.project_name | lower | replace(' ', '') }}",
+    "repo_name": "{{ cookiecutter.project_name | lower | replace(' ', '_') }}",
+    "company_prefix": "com.example",
+    "package_name": "{{ cookiecutter.company_prefix }}.{{ cookiecutter.project_name | lower | replace(' ', '.') }}",
+    "package_path": "{{ cookiecutter.package_name | replace('.', '/') }}",
+    "environment_sdk": ">=3.3.0 <4.0.0",
+    "use_dark_mode": ["true", "false"],
+
+    "_copy_without_render": [
+        "android/gradlew",
+        "android/gradlew.bat",
+        "android/gradle/wrapper/gradle-wrapper.jar"
+    ]
+}
